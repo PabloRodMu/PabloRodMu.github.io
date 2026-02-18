@@ -10,55 +10,46 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-
-<!-- ================= NAVBAR ================= -->
+    <!-- Navegación -->
+    <!-- Navegación -->
 <nav class="navbar">
-    <div class="container">
-        <ul class="nav-menu">
+    <div class="container" style="display: flex; justify-content: center; align-items: center; position: relative; padding: 1rem 0;">
+        <ul class="nav-menu" id="navMenu" style="display: flex; gap: 2rem; list-style: none; padding: 0; margin: 0;">
             <li><a href="#inicio" class="nav-link">Inicio</a></li>
             <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
             <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
             <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
             <li><a href="#contacto" class="nav-link">Contacto</a></li>
         </ul>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" style="position: absolute; right: 1rem; background: none; border: none; cursor: pointer;">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </div>
 </nav>
 
-<!-- ================= HERO ================= -->
-<section id="inicio" class="hero">
-    <div class="container">
-        <div class="hero-content">
 
-            <!-- FOTO -->
-            <img src="assets/foto_perfil.png" 
-                 alt="Foto de Pablo Rodríguez Muñoz"
-                 class="hero-photo">
 
-            <!-- TEXTO -->
-            <div class="hero-text">
+    <!-- Sección Inicio -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-content">
                 <h1 class="hero-name">Pablo Rodríguez Muñoz</h1>
-                <h2 class="hero-title">
-                    Data Analyst | Python • SQL • Power BI | EDA, Visualización y Machine Learning
-                </h2>
-
+                <h2 class="hero-title">Data Analyst | Python • SQL • Power BI | Experiencia en EDA, Visualización y ML</h2>
                 <p class="hero-description">
-                    Profesional con base en Sistemas Microinformáticos y Redes, orientado al análisis de datos y la toma de decisiones basada en evidencia. 
-                    Experiencia práctica en proyectos de Business Intelligence y Machine Learning.
+                    Profesional formado en Sistemas Microinformáticos y Redes, orientado al análisis de datos y administración de sistemas.
                 </p>
-
                 <div class="hero-buttons">
                     <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
                     <a href="#sobre-mi" class="btn btn-secondary">Sobre mí</a>
                 </div>
             </div>
-
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Sección Sobre mí -->
+    <!-- Sección Sobre mí -->
     <section id="sobre-mi" class="about">
         <div class="container">
             <h2 class="section-title">Sobre mí</h2>
