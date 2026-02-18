@@ -262,12 +262,22 @@ section {
 }
 
 .skill-tag {
-    background: rgba(255, 59, 59, 0.1);
-    border: 1px solid rgba(255, 59, 59, 0.3);
-    padding: 0.8rem;
+    background: var(--gradient-red);
+    color: white;
+    padding: 0.8rem 1.5rem;
     border-radius: 25px;
-    text-align: center;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: var(--transition);
+    box-shadow: 0 4px 15px rgba(255, 59, 59, 0.3);
+    display: inline-block;
 }
+
+.skill-tag:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 30px rgba(255, 59, 59, 0.6);
+}
+
 
 /* Proyectos */
 .projects-grid {
