@@ -619,7 +619,11 @@ section {
     margin-top: 3rem;   /* 👈 añade esto */
     margin-bottom: 1.5rem;
     }
-
+    
+    .hero {
+        padding-bottom: 170px;
+    }
+    
     .projects-grid {
         grid-template-columns: 1fr;
     }
