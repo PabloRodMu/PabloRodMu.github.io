@@ -114,7 +114,22 @@ body {
     gap: 5px;
     padding: 5px;
 }
+.lang-btn {
+    background: transparent;
+    color: var(--text-primary);
+    border: 2px solid var(--accent-red);
+    border-radius: 20px;
+    padding: 0.35rem 0.9rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+}
 
+.lang-btn:hover {
+    background: rgba(255, 59, 59, 0.1);
+    border-color: var(--accent-red-light);
+}
 .menu-toggle span {
     width: 25px;
     height: 3px;
@@ -550,7 +565,13 @@ section {
     .menu-toggle {
         display: flex;
     }
-
+     .lang-btn {
+        width: auto;
+        max-width: none;
+        padding: 0.3rem 0.7rem;
+        font-size: 0.8rem;
+    }
+}
     .nav-menu {
         position: fixed;
         top: 70px;
