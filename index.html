@@ -18,12 +18,16 @@
 <nav class="navbar">
     <div class="container" style="display: flex; justify-content: center; align-items: center; position: relative; padding: 1rem 0;">
         <ul class="nav-menu" id="navMenu" style="display: flex; gap: 2rem; list-style: none; padding: 0; margin: 0;">
-            <li><a href="#inicio" class="nav-link">Inicio</a></li>
-            <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
-            <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
-            <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
-            <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            <li><a href="#inicio" class="nav-link" data-i18n="nav_home">Inicio</a></li>
+            <li><a href="#sobre-mi" class="nav-link" data-i18n="nav_about">Sobre mí</a></li>
+            <li><a href="#proyectos" class="nav-link" data-i18n="nav_projects">Proyectos</a></li>
+            <li><a href="#habilidades" class="nav-link" data-i18n="nav_skills">Habilidades</a></li>
+            <li><a href="#contacto" class="nav-link" data-i18n="nav_contact">Contacto</a></li>
         </ul>
+
+	<button id="langToggle" class="btn btn-secondary" style="margin-left:2rem; padding:0.5rem 1.2rem;">
+	  EN
+	</button>
         <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" style="position: absolute; right: 1rem; background: none; border: none; cursor: pointer;">
             <span></span>
             <span></span>
@@ -42,13 +46,13 @@
                     alt="Foto de Pablo Rodríguez Muñoz" 
                     class="hero-photo">
                 <h1 class="hero-name">Pablo Rodríguez Muñoz</h1>
-                <h2 class="hero-title">Data Analyst | IT Support | Networks Technician</h2>
-                <p class="hero-description">
+                <h2 class="hero-title" data-i18n="hero_title">Data Analyst | IT Support | Networks Technician</h2>
+                <p class="hero-description" data-i18n="hero_description">
                     Profesional formado en Sistemas Microinformáticos y Redes, orientado al análisis de datos y administración de sistemas.
                 </p>
                 <div class="hero-buttons">
-                    <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
-                    <a href="#sobre-mi" class="btn btn-secondary">Sobre mí</a>
+                    <a href="#proyectos" class="btn btn-primary" data-i18n="btn_projects">Ver proyectos</a>
+                    <a href="#sobre-mi" class="btn btn-secondary" data-i18n="btn_about">Sobre mí</a>
                 </div>
             </div>
         </div>
@@ -57,10 +61,10 @@
     <!-- Sección Sobre mí -->
     <section id="sobre-mi" class="about">
         <div class="container">
-            <h2 class="section-title">Sobre mí</h2>
+            <h2 class="section-title" data-i18n="about_title">Sobre mí</h2>
             <div class="about-content">
             
-            <div class="about-intro">
+            <div class="about-intro" data-i18n-html="about_intro">
     <p>
         Soy Data Analyst en formación continua, con base técnica en sistemas informáticos y experiencia práctica en proyectos de análisis de datos y Machine Learning. Trabajo principalmente con Python, SQL y herramientas de visualización para explorar datos, entrenar modelos predictivos y comunicar resultados de forma clara.
     </p>
@@ -72,8 +76,8 @@
 <br>
 <br>
                 <div class="about-section">
-                    <h3 class="subsection-title">Formación</h3>
-                    <ul class="info-list">
+                    <h3 class="subsection-title" data-i18n="education_title">Formación</h3>
+                    <ul class="info-list" data-i18n-html="education_list">
                         <li>FP de grado medio en Sistemas Microinformáticos y Redes</li>
                         <li>Bootcamp de Data Analyst - 600h</li>
                         <li>Programación en IA y Big Data en entornos 5G - 150h</li>
@@ -84,8 +88,8 @@
                 </div>
 
                 <div class="about-section">
-                    <h3 class="subsection-title">Experiencia Profesional</h3>
-                    <ul class="info-list">
+                    <h3 class="subsection-title" data-i18n="experience_title">Experiencia Profesional</h3>
+                    <ul class="info-list" data-i18n-html="experience_list">
                         <li>
                             <strong>Técnico informático</strong> en tienda especializada en reparación y mantenimiento de equipos informáticos, diagnóstico de fallos y soporte técnico al cliente.
                         </li>
@@ -94,15 +98,15 @@
                         </li>
                     </ul>
                     <div class="cv-download">
-                            <a href="assets/CV_ANALISTA_DE_DATOS_RODRIGUEZ_MUÑOZ_PABLO.pdf" download class="tech-tag cv-btn">
+                            <a href="assets/CV_ANALISTA_DE_DATOS_RODRIGUEZ_MUÑOZ_PABLO.pdf" download class="tech-tag cv-btn" data-i18n="cv_download">
                                 Descargar CV
                             </a>
                     </div>
                 </div>
 
                 <div class="about-section">
-                    <h3 class="subsection-title">Habilidades Principales</h3>
-                    <div class="skills-grid">
+                    <h3 class="subsection-title" data-i18n="main_skills_title">Habilidades Principales</h3>
+                    <div class="skills-grid" data-i18n-html="main_skills_list">
                         <span class="skill-tag">Montaje y mantenimiento de equipos</span>
                         <span class="skill-tag">Ciberseguridad(Kali Linux)</span>
                         <span class="skill-tag">Montaje y administración de redes</span>
@@ -116,8 +120,8 @@
                 </div>
 
                 <div class="about-section">
-                    <h3 class="subsection-title">Intereses Profesionales</h3>
-                    <p class="interests-text">
+                    <h3 class="subsection-title" data-i18n="interests_title">Intereses Profesionales</h3>
+                    <p class="interests-text" data-i18n="interests_text">
                         Desarrollo profesional en análisis de datos, administración de sistemas, redes e infraestructuras IT.
                     </p>
                 </div>
@@ -128,41 +132,41 @@
     <!-- Sección Proyectos -->
     <section id="proyectos" class="projects">
         <div class="container">
-            <h2 class="section-title">Proyectos Destacados</h2>
+            <h2 class="section-title" data-i18n="projects_title">Proyectos Destacados</h2>
             <div class="projects-grid">
                 <div class="project-card">
-                    <h3 class="project-title">Analisis del negocio de AirBnb</h3>
-                    <p class="project-description">
+                    <h3 class="project-title" data-i18n="project1_title">Analisis del negocio de AirBnb</h3>
+                    <p class="project-description" data-i18n="project1_desc">
                         Proyecto de Business Intelligence desarrollado en Power BI para analizar datos de AirBnB y generar dashboards interactivos con insights accionables para la toma de decisiones en el sector inmobiliario.
                     </p>
                     <a href="https://github.com/PabloRodMu/Proyecto-Power-BI-AirBnB.git" 
                        target="_blank" 
                        rel="noopener noreferrer" 
-                       class="project-link">
+                       class="project-link" data-i18n="project_link">
                         Ver proyecto →
                     </a>
                 </div>
                 <div class="project-card">
-                    <h3 class="project-title">Predicción de baja de clientes</h3>
-                    <p class="project-description">
+                    <h3 class="project-title" data-i18n="project2_title">Predicción de baja de clientes</h3>
+                    <p class="project-description" data-i18n="project2_desc">
                         Modelo de clasificación binaria para predecir la baja de clientes en telecomunicaciones, incluyendo ETL, EDA y despliegue en producción.
                     </p>
                     <a href="https://github.com/PabloRodMu/Problema-de-clasificacion.git" 
                        target="_blank" 
                        rel="noopener noreferrer" 
-                       class="project-link">
+                       class="project-link" data-i18n="project_link">
                         Ver proyecto →
                     </a>
                 </div>                      
                 <div class="project-card">
-                    <h3 class="project-title">Dashboard Excel Ventas de Videojuegos</h3>
-                    <p class="project-description">
+                    <h3 class="project-title" data-i18n="project3_title">Dashboard Excel Ventas de Videojuegos</h3>
+                    <p class="project-description" data-i18n="project3_desc">
                         Dashboard interactivo en Excel con segmentación por años y gráficos regionales
                     </p>
                     <a href="https://github.com/PabloRodMu/Analisis-Excel-Ventas-Historicas-Videojuegos-Por-Genero.git" 
                        target="_blank" 
                        rel="noopener noreferrer" 
-                       class="project-link">
+                       class="project-link" data-i18n="project_link">
                         Ver proyecto →
                     </a>
                 </div>      
@@ -173,10 +177,10 @@
     <!-- Sección Habilidades Técnicas -->
     <section id="habilidades" class="skills">
         <div class="container">
-            <h2 class="section-title">Habilidades Técnicas</h2>
+            <h2 class="section-title" data-i18n="skills_title">Habilidades Técnicas</h2>
             <div class="skills-content">
                 <div class="skill-category">
-                    <h3 class="category-title">Lenguajes</h3>
+                    <h3 class="category-title" data-i18n="languages_title">Lenguajes</h3>
                     <div class="tech-tags">
                         <span class="tech-tag">Python</span>
                         <span class="tech-tag">SQL</span>
@@ -187,7 +191,7 @@
                 </div>
 
                 <div class="skill-category">
-                    <h3 class="category-title">Herramientas</h3>
+                    <h3 class="category-title" data-i18n="tools_title">Herramientas</h3>
                     <div class="tech-tags">
                         <span class="tech-tag">Excel</span>
                         <span class="tech-tag">Power BI</span>
@@ -219,11 +223,11 @@
                 </div>
 
                 <div class="skill-category">
-                    <h3 class="category-title">Tecnologías Emergentes</h3>
+                    <h3 class="category-title" data-i18n="emerging_tech_title">Tecnologías Emergentes</h3>
                     <div class="tech-tags">
-                        <span class="tech-tag">Inteligencia Artificial</span>
-                        <span class="tech-tag">Realidad Virtual y Aumentada</span>
-                        <span class="tech-tag">IoT</span>
+                        <span class="tech-tag" data-i18n="ai_tag">Inteligencia Artificial</span>
+                        <span class="tech-tag" data-i18n="vr_tag">Realidad Virtual y Aumentada</span>
+			<span class="tech-tag" data-i18n="iot_tag">IoT</span>
                     </div>
                 </div>
             </div>
@@ -233,9 +237,9 @@
     <!-- Sección Contacto -->
     <section id="contacto" class="contact">
         <div class="container">
-            <h2 class="section-title">Contacto</h2>
+            <h2 class="section-title" data-i18n="contact_title">Contacto</h2>
             <div class="contact-content">
-                <p class="contact-text">¿Interesado en colaborar o tienes alguna pregunta?</p>
+                <p class="contact-text" data-i18n="contact_text">¿Interesado en colaborar o tienes alguna pregunta?</p>
                 <div class="contact-links">
                      <a href="tel:+34634727480" class="contact-link">
                         <span class="contact-icon">📞</span>
