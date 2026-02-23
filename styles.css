@@ -154,10 +154,11 @@ body {
 /* Hero Section */
 .hero {
     min-height: 100vh;
+    min-height: 100dvh; 
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 120px 0 80px;
+    padding: 120px 0 100px;
     text-align: center;
     position: relative;
     overflow: hidden;
